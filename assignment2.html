@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Array Sorting</h1>
+    <p>arr1 = [3,5,8,6,4,10,9,12,21]</p>
+    <p>Ascending order of Array</p>
+    <p id = "demo1"></p><br/>
+
+    <p>Descending order of Array</p>
+    <p id = "demo2"></p>
+    
+    <script>
+        arr1 = [3,5,8,6,4,10,9,12,21];
+        function compareFunction(a,b){
+            return a - b;
+        }
+        result = arr1.sort(compareFunction);
+        document.getElementById("demo1").innerHTML = result;
+
+       function compareFunction2(a,b){
+        return b - a;
+       }
+       result = arr1.sort(compareFunction2);
+       document.getElementById("demo2").innerHTML = result;
+    </script>
+</body>
+</html>
